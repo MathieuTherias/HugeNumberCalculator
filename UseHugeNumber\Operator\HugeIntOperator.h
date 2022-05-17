@@ -1,18 +1,12 @@
-#include <stdio.h>
-#include <stdlib.h>
-#define FIZZ "Fizz"
-#define BUZZ "Buzz"
-int main (void) {
-    for (int i = 1; i <= 100; i++) {
-        if (i % 15 == 0) {
-            printf ("%s%s\n", FIZZ, BUZZ);
-        } else if (i % 3 == 0) {
-            printf ("%s\n", FIZZ);
-        } else if (i % 5 == 0) {
-            printf ("%s\n", BUZZ);
-        } else {
-            printf ("%d\n", i);
-        }
-    }
-    return EXIT_SUCCESS;
-}
+#ifndef OPERATOR_HUGE_INT
+#define OPERATOR_HUGE_INT
+
+#include "../Type/HugeInt.h"
+#include "HugeUnsignedIntOperator.h"
+
+extern HugeInt* addHugeInt       (const HugeInt* operand1, const HugeInt* operand2);
+extern HugeInt* substractHugeInt (const HugeInt* operand1, const HugeInt* operand2);
+extern HugeInt* multiplyHugeInt  (const HugeInt* operand1, const HugeInt* operand2);
+extern HugeInt* divideHugeInt    (const HugeInt* operand1, const HugeInt* operand2);
+
+#endif // !OPERATOR_HUGE_INT
