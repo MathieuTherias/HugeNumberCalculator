@@ -1,10 +1,9 @@
-#include <stdio.h>
-#include "ScanHugeNumber.h"
+#ifndef SCAN_HUGE_NUMBER
+#define SCAN_HUGE_NUMBER
 
-HugeInt* scanHugeInt (void) {
-    return NULL;
-}
+#include "../UseHugeNumber/Type/HugeInt.h"
 
-HugeUnsignedInt* scanHugeUnsignedInt (void) {
-    return NULL;
-}
+extern HugeInt*         scanHugeInt         (void);
+extern HugeUnsignedInt* scanHugeUnsignedInt (void);
+
+#endif // !SCAN_HUGE_NUMBER
