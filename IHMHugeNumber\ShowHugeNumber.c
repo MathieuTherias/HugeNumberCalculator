@@ -28,3 +28,5 @@ void printHugeInt (const HugeInt* hugeInt) {
 
 void printHugeFloat (const HugeFloat* hugeFloat) {
 }
+
+printHugeUnsignedInt()
